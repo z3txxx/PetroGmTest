@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>d4bec748-ffe1-4bee-935b-274f86a3b00f</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>GeometryShared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Circle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Line.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Point.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Rect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shape.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShapeFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ShapeIntersection.cs" />
+  </ItemGroup>
+</Project>
